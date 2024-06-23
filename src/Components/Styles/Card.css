@@ -1,0 +1,90 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.377);
+    border-radius: 10px;
+    gap: 10px;
+}
+
+.card__header {
+    width: 100%;
+    height: 180px;
+}
+
+.card__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card__body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card__title-wrapper {
+    width: 100%;
+    padding: 0 0.5rem;
+    text-align: left;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.card__title {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.card__stocks-wrapper {
+    width: 100%;
+    padding: 0 0.5rem;
+    padding-bottom: 0.5rem;
+    text-align: left;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.card__stocks {
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 769px) and (max-width: 999px) {
+    .card__title {
+        font-size: 0.9rem;
+    }
+       
+    .card__stocks {
+        font-size: 0.8rem;
+    }
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .card__title {
+        font-size: 0.9rem;
+    }
+       
+    .card__stocks {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .card__title {
+        font-size: 0.8rem;
+    }
+       
+    .card__stocks {
+        font-size: 0.8rem;
+    }
+}

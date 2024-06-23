@@ -1,0 +1,23 @@
+.scroller {
+    background: rgba(0, 0, 0, 0.911);
+    border-radius: 50%;
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 998;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.scroller:hover {
+    transform: scale(1.1);
+}
+
+.scroller__icon {
+    color: white;
+    font-size: 1.5rem;
+}
