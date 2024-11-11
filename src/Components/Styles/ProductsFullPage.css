@@ -12,8 +12,7 @@
 
 .products-full-page__controls-wrapper {
     display: flex;
-    flex-direction: column;
-    gap: 25px;
+    gap: 0.5rem;
 }
 
 .products-full-page__search-input {
@@ -38,10 +37,46 @@
     font-weight: 500;
     outline: none;
     border: 1px solid black;
-    width: 250px;
+    width: 200px;
     border-radius: 5px;
     cursor: pointer;
     background-color: white;
+    margin-top: 0.5rem;
+}
+
+.products-full-page__filter-wrapper {
+    position: relative;
+}
+
+.products-full-page__icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 35px;
+    background: var(--blue-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.products-full-page__icon {
+    color: white;
+}
+
+.products-full-page__filter-dropdown-wrapper {
+    position: absolute;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    top: 2.5rem;
+    left: 0;
+    border-radius: 5px;
+    padding: 1rem;
+    z-index: 100;
+}
+
+.products-full-page__filter-field-wrapper {
+    margin-top: 1rem;
 }
 
 .products-full-page__body {
